@@ -34,6 +34,7 @@ public class CouponService {
                 coupon.setExpirationDate(newCoupon.getExpirationDate());
                 coupon.setStatus(newCoupon.getStatus());
                 coupon.setCompanyId(newCoupon.getCompanyId());
+                coupon.setDiscountRate(newCoupon.getDiscountRate());  // Update discountRate
                 return couponRepository.save(coupon);
             })
             .orElseGet(() -> {

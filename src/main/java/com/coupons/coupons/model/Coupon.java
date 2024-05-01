@@ -13,6 +13,7 @@ public class Coupon {
     private String expirationDate;
     private Boolean status;  
     private Long companyId;  
+    private Double discountRate; 
 
     // Getters and setters
     public Long getId() {
@@ -61,5 +62,13 @@ public class Coupon {
 
     public void setCompanyId(Long companyId) {
         this.companyId = companyId;
+    }
+
+    public Double getDiscountRate() {
+        return discountRate;
+    }
+
+    public void setDiscountRate(Double discountRate) {
+        this.discountRate = discountRate;
     }
 }
