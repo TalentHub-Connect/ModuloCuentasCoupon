@@ -31,10 +31,10 @@ public class CouponService {
             .map(coupon -> {
                 coupon.setName(newCoupon.getName());
                 coupon.setDescription(newCoupon.getDescription());
-                coupon.setExpirationDate(newCoupon.getExpirationDate());
+                coupon.setExpirationdate((newCoupon.getExpirationdate()));
                 coupon.setStatus(newCoupon.getStatus());
                 coupon.setCompanyId(newCoupon.getCompanyId());
-                coupon.setDiscountRate(newCoupon.getDiscountRate());  // Update discountRate
+                coupon.setDiscountRate(newCoupon.getDiscountRate());  
                 return couponRepository.save(coupon);
             })
             .orElseGet(() -> {

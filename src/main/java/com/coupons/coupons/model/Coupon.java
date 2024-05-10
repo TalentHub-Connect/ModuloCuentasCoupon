@@ -10,10 +10,10 @@ public class Coupon {
     private Long id;
     private String name;
     private String description;
-    private String expirationDate;
-    private Boolean status;  
+    private String expirationdate;
+    private String status;  
     private Long companyId;  
-    private Double discountRate; 
+    private Double discountrate; 
 
     // Getters and setters
     public Long getId() {
@@ -40,21 +40,13 @@ public class Coupon {
         this.description = description;
     }
 
-    public String getExpirationDate() {
-        return expirationDate;
-    }
+   
 
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
-    public Boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
+
 
     public Long getCompanyId() {
         return companyId;
@@ -65,10 +57,30 @@ public class Coupon {
     }
 
     public Double getDiscountRate() {
-        return discountRate;
+        return discountrate;
     }
 
-    public void setDiscountRate(Double discountRate) {
-        this.discountRate = discountRate;
+    public void setDiscountRate(Double discountrate) {
+        this.discountrate = discountrate;
+    }
+
+    public String getExpirationdate() {
+        return expirationdate;
+    }
+
+    public void setExpirationdate(String expirationdate) {
+        this.expirationdate = expirationdate;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Double getDiscountrate() {
+        return discountrate;
+    }
+
+    public void setDiscountrate(Double discountrate) {
+        this.discountrate = discountrate;
     }
 }
